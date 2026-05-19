@@ -165,7 +165,6 @@ function App() {
             animate={{ opacity: 1 }}
             transition={{ delay: 1.2, duration: 1 }}
           >
-            early stage project
           </motion.div>
         </header>
 
