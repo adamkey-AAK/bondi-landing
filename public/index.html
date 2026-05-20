@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>bondi.</title>
+    <meta name="description" content="Human connection, reimagined." />
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  
+<script>
+(function () {
+  function updateLogoFog() {
+    var opacity = Math.min(window.scrollY / 90, 1);
+    document.documentElement.style.setProperty('--logo-fog-opacity', opacity.toFixed(3));
+  }
+  updateLogoFog();
+  window.addEventListener('scroll', updateLogoFog, { passive: true });
+})();
+</script>
+
+</body>
+</html>
